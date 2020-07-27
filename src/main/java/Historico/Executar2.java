@@ -1,9 +1,9 @@
-package Algoritmo;
+package Historico;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Produto {
+/* class Produto {
     private String nome;
     private Double espaco;
     private Double valor;
@@ -37,7 +37,8 @@ class Produto {
     public void setValor(Double valor) {
         this.valor = valor;
     }
-}
+} */
+
 
 class  Individuo {
     private List espacos = new ArrayList<>();
@@ -112,7 +113,7 @@ class  Individuo {
     }
 }
 
-public class Executar {
+public class Executar2 {
     public static void main(String[] args) {
         List<Produto> listaProdutos = new ArrayList<>();
         listaProdutos.add(new Produto("Geladeira Dako", 0.751, 999.90));
