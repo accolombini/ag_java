@@ -1,9 +1,9 @@
-package Algoritmo;
+package Historico;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Produto {
+/*class Produto {
     private String nome;
     private Double espaco;
     private Double valor;
@@ -38,7 +38,7 @@ class Produto {
         this.valor = valor;
     }
 }
-
+*/
 class  Individuo {
     private List espacos = new ArrayList<>();
     private List valores = new ArrayList<>();
@@ -57,7 +57,7 @@ class  Individuo {
         this.geracao = 0;
 
         for (int i = 0; i < this.espacos.size(); i++) {
-            if (java.lang.Math.random() < 0.5) {
+            if (Math.random() < 0.5) {
                 this.cromossomo.add("0");
             } else {
                 this.cromossomo.add("1");
@@ -138,7 +138,7 @@ class  Individuo {
     }
 }
 
-public class Executar {
+public class Executar3 {
     public static void main(String[] args) {
         List<Produto> listaProdutos = new ArrayList<>();
         listaProdutos.add(new Produto("Geladeira Dako", 0.751, 999.90));
