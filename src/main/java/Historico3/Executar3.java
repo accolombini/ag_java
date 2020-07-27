@@ -1,4 +1,4 @@
-package Historico;
+package Historico1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -166,7 +166,7 @@ public class Executar3 {
         }
         Double limite = 3.0;
 
-        Individuo individuo1 = new Individuo(espacos, valores, limite);
+        Historico2.Individuo individuo1 = new Historico2.Individuo(espacos, valores, limite);
         individuo1.avaliacao();
         System.out.println("Nota: " + individuo1.getNotaAvaliacao());
         System.out.println("Espaço usado: " + individuo1.getEspacoUsado());
