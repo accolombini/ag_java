@@ -3,7 +3,7 @@ package Historico1;
 import java.util.ArrayList;
 import java.util.List;
 
-/*class Produto {
+class Produto {
     private String nome;
     private Double espaco;
     private Double valor;
@@ -38,7 +38,7 @@ import java.util.List;
         this.valor = valor;
     }
 }
-*/
+
 class  Individuo {
     private List espacos = new ArrayList<>();
     private List valores = new ArrayList<>();
@@ -166,7 +166,7 @@ public class Executar3 {
         }
         Double limite = 3.0;
 
-        Historico2.Individuo individuo1 = new Historico2.Individuo(espacos, valores, limite);
+        Historico.Individuo individuo1 = new Historico.Individuo(espacos, valores, limite);
         individuo1.avaliacao();
         System.out.println("Nota: " + individuo1.getNotaAvaliacao());
         System.out.println("Espaço usado: " + individuo1.getEspacoUsado());
